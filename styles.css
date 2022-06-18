@@ -15,19 +15,21 @@ body{
 section{
  display: flex;
  align-items: center;
- gap: 1.6rem;
- padding-left: 5%;
+ justify-content: space-between;
+ width: 70%;
+ width: auto;
+
 }
 .text-div > h1{
- word-spacing: 0.4rem;
  color: #ffffff;
- width: 20rem;
+ width: 30rem;
  max-width: 100%;
- font-weight: bold;
+ font-weight: 900;
+ font-size: 40px;
+ line-height: 50px;
+ margin-bottom: 0%;
 }
 .text-div > p{ 
- font-size: 12px;
- padding-top: 1rem;
  width: 20rem;
  max-width: 100%;
  color: #ffffff;
@@ -38,11 +40,11 @@ form{
  border-radius: 7px;
  height: 53vh;
  width: 25rem;
- margin-bottom: 5rem;
 }
 input{
  display: flex;
  flex-direction: column; 
+ font-family: 'poppins';
  margin: 0 auto;
  width: 300px;
  padding: 8px 10px;
@@ -69,11 +71,13 @@ button{
  cursor: pointer;
  display: flex;
  justify-content: center;
+ font-family: 'poppins';
 }
 .btn-p{
  font-size: 9px;
  text-align: center;
  padding-top: 1rem;
+ font-family: 'poppins';
  color: hsl(246, 25%, 77%);
 }
 span{
@@ -87,7 +91,7 @@ h5{
  margin-top: 3rem;
  margin-bottom: 1rem;
  padding: 8px 10px;
- box-shadow: 1px 5px hsl(0, 100%, 60%);
+ box-shadow: 0px 5px 10px hsl(0, 100%, 60%);
  color: #ffffff;
  border-radius: 5px;
  border: none;
@@ -98,5 +102,39 @@ h5{
 }
 
 @media screen and (max-width: 375px){
-
+  body {
+    background-image: url(image/bg-intro-mobile.png);
+  }
+  section{
+    display: block;
+    text-align: center; /*This replaced align-items */
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .text-div > h1{
+    width: 100%; /*Note:  Don't use rem, it'll overlap  */
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px; 
+    margin-bottom: 0%;
+  }
+  .text-div > p{ 
+    width: 20rem;
+  }
+  form{
+    background-color: #ffffff;
+    border: 1px solid greenyellow;
+    border-radius: 7px;
+    height: 65vh;
+    width: 21rem;
+    /* margin-bottom: 5rem; I don put padding for the body */
+  }
+  h5{
+    padding: 20px 60px;
+    font-size: 16px;
+  }
+  .btn-p{
+    padding: 0 2rem;
+    font-size: 12px;
+   }
 }

@@ -15,7 +15,7 @@ body{
 section{
  display: flex;
  align-items: center;
- justify-content: space-between;
+ gap: 2rem;
  width: 70%;
  width: auto;
 
@@ -38,7 +38,7 @@ form{
  background-color: #ffffff;
  border: 1px solid greenyellow;
  border-radius: 7px;
- height: 53vh;
+ height: 56vh;
  width: 25rem;
 }
 input{
@@ -125,7 +125,7 @@ h5{
     background-color: #ffffff;
     border: 1px solid greenyellow;
     border-radius: 7px;
-    height: 65vh;
+    height: 70vh;
     width: 21rem;
     /* margin-bottom: 5rem; I don put padding for the body */
   }
@@ -135,6 +135,6 @@ h5{
   }
   .btn-p{
     padding: 0 2rem;
-    font-size: 12px;
+    font-size: 8px;
    }
 }
